@@ -21,34 +21,34 @@ window#waybar {
 	all:unset;
 }
 
-#power-container;
-#media-player;
+#power-container,
+#media-player,
 .module {
 	all:unset;
 
-	background: alpha(@background; 0.6);
+	background: alpha(@background, 0.6);
 	color: @color7;
 
 	margin: 8px 5px 0px;
 	padding: 7px 15px;
 
-	border: solid 2px alpha(@color11; 0.2);
+	border: solid 2px alpha(@color11, 0.2);
 	border-radius: 10px;
 
 	transition: all 0.1s ease-in-out;
 }
-#workspaces button:hover;
+#workspaces button:hover,
 .module:hover:not(#workspaces) {
-	background-color: alpha(@background; 0.95);
+	background-color: alpha(@background, 0.95);
 	color: @color15;
 }
 
-#custom-sleep;
-#custom-lock;
-#custom-shutdown;
-#custom-play-button;
-#custom-next-track;
-#custom-previous-track;
+#custom-sleep,
+#custom-lock,
+#custom-shutdown,
+#custom-play-button,
+#custom-next-track,
+#custom-previous-track,
 #custom-progress-bar {
 	all:unset;
 	padding: 4px 10px;
@@ -62,19 +62,18 @@ window#waybar {
 	
 	border-radius: 10px;
 	padding: 0px 8px;
-	color: alpha(@background; 0.8);
+	color: alpha(@background, 0.8);
 
 	transition: all 0.1s ease-in-out;
 }
 #workspaces button.active {
-	color: alpha(@color6; 0.75);
+	color: alpha(@color6, 0.75);
 }
 '';
 		# i have no idea why but it has to be like this:
 		# settings (list of bars) > bar > actual settings
 		settings = [
-			{
-				mainBar = {
+			mainBar = {
 					"layer" = "top";
 					"position" = "top";
 					"reload_style_on_change" = true;
@@ -111,7 +110,7 @@ window#waybar {
 						"on-click" = "playerctl previous";
 					};
 					"custom/play-button" = {
-						"exec" = "/${homeDir}/.config/waybar/scripts/play-button.sh";
+						"exec" = "${homeDir}/.config/waybar/scripts/play-button.sh";
 						"interval" = 1;
 						"return-type" = "json";
 						"on-click" = "playerctl play-pause";
@@ -122,7 +121,7 @@ window#waybar {
 						"on-click" = "playerctl next";
 					};
 					"custom/progress-bar" = {
-						"exec" = "/${homeDir}/.config/waybar/scripts/progress-bar-launcher.sh";
+						"exec" = "${homeDir}/.config/waybar/scripts/progress-bar-launcher.sh";
 						"return-type" = "json";
 						"interval" = 1;
 						"on-scroll-up" = "playerctl position 3+";
@@ -192,9 +191,8 @@ window#waybar {
 						"tooltip" = false;
 						"on-click" = "systemctl poweroff";
 					};
-
-				};
-			}
-		];
+				];
+			};
+		};
 	};
 }
