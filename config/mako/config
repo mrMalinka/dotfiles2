@@ -2,13 +2,13 @@
 sort=-time
 layer=overlay
 
-background-color=#091219
+background-color=#050a0c
 
 width=300
 height=110
 
 border-size=2
-border-color=#ba4140
+border-color=#5e605f
 border-radius=10
 
 margin=15

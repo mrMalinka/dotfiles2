@@ -14,3 +14,7 @@ if [ -s ~/.config/wallpaper.png ]; then
 	rm ~/.config/wallpaper.png
 fi
 cp $1 ~/.config/wallpaper.png
+
+read -p "updating home-manager, continue? [y/n] " response && [[ $response == "y" ]] && echo "continuing" || exit 0
+
+home-manager switch --flake ~/.config/home-manager/
