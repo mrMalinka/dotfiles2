@@ -37,16 +37,21 @@
 		# '')
 	];
 
-	# currently unsupported: hypridle, mako
-	# not included by choice:
-	# nvim
-	# waybar (the settings are really weird and dont work, also scripts)
+	# not included by choice: nvim
 	imports = [
 		./starship.nix
 		./alacritty.nix
 		./cava.nix
 		./fastfetch.nix
+
 		./hyprland.nix
+		./hypridle.nix # custom
 		./hyprlock.nix
+
+		./mako.nix # custom
+		./waybar.nix # custom
+		./wofi.nix
+
+		./bashrc.nix # custom
 	];
 }

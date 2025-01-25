@@ -1,14 +1,18 @@
 { ... }:
-# this is not included in packages.nix since there is no programs.hypridle option
-# ill keep it around for if it ever does appear
+
 {
-	programs.hypridle = {
-		enable = true;
-		settings = {
-			listener = {
-				timeout = 150;
-				on-timeout = "hyprlock";
-			};
-		};
-	};
+
+home.file.".config/hypr/hypridle.conf" = { text = ''
+general {
+    #ignore_dbus_inhibit = true
+    #ignore_systemd_inhibit = true
+}
+
+listener {
+    timeout = 150
+    on-timeout = hyprlock
+}
+'';
+};
+
 }
