@@ -1,17 +1,14 @@
-{ lib, ... }:
+{ config, lib, ... }:
 
-let
-	#colors = import ./colors.nix { inherit lib; };
-	#palette = colors.options.globalTheme.colors.default;
-in {
+{
 	programs.fastfetch = {
 		enable = true;
 		settings = {
 			logo = {
-				#source = "${config.home.homeDirectory}/.config/fastfetch/nixos.png";
+				source = "${config.home.homeDirectory}/.config/fastfetch/nixos.txt";
 				color = { "1" = "33"; };
 				padding = {
-					top = 1;
+					top = 2;
 					left = 2;
 					right = 3;
 				};
@@ -65,4 +62,17 @@ in {
 			];
 		};
 	};
+
+home.file.".config/fastfetch/nixos.txt".text = ''
+     ▟█▖    ▝█▙ ▗█▛
+  ▗▄▄▟██▄▄▄▄▄▝█▙█▛  ▖
+  ▀▀▀▀▀▀▀▀▀▀▀▘▝██  ▟█▖
+     ▟█▛       ▝█▘▟█▛
+▟█████▛          ▟█████▛
+   ▟█▛▗█▖       ▟█▛
+  ▝█▛  ██▖▗▄▄▄▄▄▄▄▄▄▄▄
+   ▝  ▟█▜█▖▀▀▀▀▀██▛▀▀▘
+     ▟█▘ ▜█▖    ▝█▛
+'';
+
 }
