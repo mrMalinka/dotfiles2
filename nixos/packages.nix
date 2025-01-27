@@ -43,7 +43,7 @@
 		jq # json cli (for waybar media player)
 		git # git
 		lua # lua (waybar media player)
-		python314 # python (auto color script)
+		python312 # python
 		imagemagick # pywal backend
 		slurp # screenshot
 		unzip # for mason nvim
@@ -53,6 +53,6 @@
 		vscode-langservers-extracted # css ls
 		nodejs # npm
 		lua-language-server # lua_ls
-
+		python312Packages.python-lsp-server # pylsp
 	];
 }

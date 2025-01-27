@@ -13,6 +13,9 @@ alias cleanup='sudo nix-collect-garbage -d'
 alias nv='nvim'
 alias snv='sudo nvim'
 
+alias ramdisk='[ ! -d ~/ramdisk ] && mkdir ~/ramdisk && sudo mount -t tmpfs -o size=1G tmpfs ~/ramdisk'
+alias unramdisk='sudo umount ~/ramdisk && [ ! -d ~/ramdisk ] || rm -r ~/ramdisk'
+
 alias wals='~/.config/walpset.sh'
 alias py='python'
 

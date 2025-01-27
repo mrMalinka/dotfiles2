@@ -1,21 +1,22 @@
 { pkgs, ... }:
 
 {
-	#nixpkgs.config.allowUnfree = true;
+	nixpkgs.config.allowUnfree = true;
 	home.packages = with pkgs; [
 		# essential
 		firefox # browser
 		vesktop # discord
-		prismlauncher # modpacks and shiz
+		#prismlauncher # modpacks and shiz
+		vscode-fhs # vsc wrapped for nix compat
 
 		# other
 		tor-browser # :3
 		heroic # games
 		baobab # disk space visualizer
 		gimp # image editor
+		go # the best language
 
 		# rice
-		yadm # dotfile manager
 		pywalfox-native # pywal/firefox compat
 
 		# utils
@@ -24,6 +25,7 @@
 		zoxide # smart cd
 		btop # resource monitor
 		blueman # bluetooth gui
+		feh # image viewer
 
 		# fun
 		cava # audio visualizer

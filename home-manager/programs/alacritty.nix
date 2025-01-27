@@ -31,6 +31,9 @@ in {
 				opacity = 0.81;
 				decorations = "None";
 				dynamic_title = false;
+
+				padding.x = 5;
+				padding.y = 4;
 			};
 		};
 	};

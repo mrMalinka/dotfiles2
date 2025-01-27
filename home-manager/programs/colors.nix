@@ -3,26 +3,26 @@
 {
 	options.globalTheme.colors = lib.mkOption {
 		default = {
-			color0 = "#0C0F11";
-			color1 = "#333c42";
-			color2 = "#37424d";
-			color3 = "#3f4c57";
-			color4 = "#49534e";
-			color5 = "#6a783a";
-			color6 = "#485767";
-			color7 = "#8c9797";
-			color8 = "#58656c";
-			color9 = "#445058";
-			color10 = "#4A5967";
-			color11 = "#556675";
-			color12 = "#626F69";
-			color13 = "#8EA14E";
-			color14 = "#61758A";
-			color15 = "#c2c3c3";
+			color0 = "#0E0F09";
+			color1 = "#4b4813";
+			color2 = "#41434a";
+			color3 = "#686324";
+			color4 = "#555a65";
+			color5 = "#5c626e";
+			color6 = "#6f727d";
+			color7 = "#93968c";
+			color8 = "#656a57";
+			color9 = "#65611A";
+			color10 = "#575A63";
+			color11 = "#8B8531";
+			color12 = "#727887";
+			color13 = "#7B8393";
+			color14 = "#9499A7";
+			color15 = "#c2c3c1";
 
-			background = "#0C0F11";
-			border = "#556675";
-			font = "#8c9797";
+			background = "#0E0F09";
+			border = "#8B8531";
+			font = "#93968c";
 		};
 	};
 }
