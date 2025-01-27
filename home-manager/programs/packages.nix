@@ -39,7 +39,6 @@
 		# '')
 	];
 
-	# not included by choice: nvim
 	imports = [
 		./starship.nix
 		./alacritty.nix
@@ -51,6 +50,7 @@
 		./hyprlock.nix
 
 		./mako.nix # custom
+		./nvim.nix # custom
 		./waybar.nix # custom
 		./wofi.nix
 

@@ -1,1 +1,3 @@
 update.sh
+config/nvim/lazy-lock.json
+*.backup
