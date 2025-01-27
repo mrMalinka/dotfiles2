@@ -1,0 +1,3 @@
+hardlink ~/.cache/wal/colors.nix to ~/.config/home-manager/programs/colors.nix
+
+ln ~/.cache/wal/colors.nix ~/.config/home-manager/programs/colors.nix
