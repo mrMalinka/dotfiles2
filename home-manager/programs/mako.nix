@@ -5,7 +5,7 @@ let
     palette = colors.options.globalTheme.colors.default;
 in {
 
-home.file.".config/mako/config" = { text = ''
+home.file.".config/mako/config".text = ''
 sort=-time
 layer=overlay
 
@@ -31,6 +31,5 @@ on-notify=exec mpg123 ~/.config/notif.mp3
 [urgency=high]
 default-timeout=0
 '';
-};
 
 }

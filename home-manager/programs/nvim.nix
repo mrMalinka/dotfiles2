@@ -2,11 +2,12 @@
 
 {
 
-home.file."~/.config/nvim/init.lua".text = ''
+home.file.".config/nvim/init.lua".text = ''
 require("config.lazy")
 
 -- basic setup
-vim.cmd("colorscheme lushwal") -- colors
+--vim.cmd("colorscheme lushwal") -- colors
+vim.cmd("colorscheme gruvbox") -- colors
 
 vim.g.loaded_netrw = 1 -- nvim tree told me to do this
 vim.g.loaded_netrwPlugin = 1
@@ -132,6 +133,8 @@ return {
 		},
 		lazy = false,
 	},
+	-- gruvbox color scheme
+	"morhetz/gruvbox",
 
 	-- autocomplete setup
 	'hrsh7th/nvim-cmp',

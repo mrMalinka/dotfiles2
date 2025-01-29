@@ -5,7 +5,7 @@
 		enable = true;
 		settings = {
 			logo = {
-				source = "${config.home.homeDirectory}/.config/fastfetch/nixos.txt";
+				source = "~/.config/fastfetch/nixos.txt";
 				color = { "1" = "35"; "2" = "36"; };
 				padding = {
 					top = 2;

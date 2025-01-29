@@ -2,12 +2,14 @@
 
 {
 	nixpkgs.config.allowUnfree = true;
+
 	home.packages = with pkgs; [
 		# essential
 		firefox # browser
 		vesktop # discord
 		#prismlauncher # modpacks and shiz
 		vscode-fhs # vsc wrapped for nix compat
+		lf # file explorer
 
 		# other
 		tor-browser # :3
@@ -15,6 +17,7 @@
 		baobab # disk space visualizer
 		gimp # image editor
 		go # the best language
+		vlc # media player
 
 		# rice
 		pywalfox-native # pywal/firefox compat
@@ -34,6 +37,9 @@
 		pipes-rs # pipe screensaver
 		figlet # big text
 
+		# kinda dependencies
+		ctpv # for lf image previews
+
 		# (pkgs.writeShellScriptBin "my-hello" ''
 		#   echo "Hello, ${config.home.username}!"
 		# '')
@@ -49,6 +55,7 @@
 		./hypridle.nix # custom
 		./hyprlock.nix
 
+		#./lf.nix
 		./mako.nix # custom
 		./nvim.nix # custom
 		./waybar.nix # custom

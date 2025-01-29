@@ -12,7 +12,7 @@ in {
 		settings = {
 			background = {
 				"monitor" = "";
-				"path" = "/home/mrmalinka/.config/wallpaper.png";
+				"path" = "~/.config/wallpaper.png";
 
 				"blur_passes" = 2;
 				"blur_size" = 3;

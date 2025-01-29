@@ -5,7 +5,7 @@ let
 	palette = colors.options.globalTheme.colors.default;
 in {
 
-home.file.".config/waybar/style.css" = { text = ''
+home.file.".config/waybar/style.css".text = ''
 * {
 	font-size: 19px;
 	font-family: "0xProto Nerd Font Propo";
@@ -64,9 +64,8 @@ window#waybar {
 	color: alpha(${palette.color6}, 0.75);
 }
 '';
-};
 
-home.file.".config/waybar/config" = { text = ''
+home.file.".config/waybar/config".text = ''
 {
 	"layer": "top",
 	"position": "top",
@@ -187,7 +186,6 @@ home.file.".config/waybar/config" = { text = ''
 	}
 }
 '';
-};
 
 home.file.".config/waybar/scripts/play-button.sh" = { text = ''
 status=$(playerctl status -f "{{ uc(status) }}")
@@ -218,7 +216,7 @@ lua /home/mrmalinka/.config/waybar/scripts/progress-bar.lua
 executable = true;
 };
 
-home.file.".config/waybar/scripts/progress-bar.lua" = { text = ''
+home.file.".config/waybar/scripts/progress-bar.lua".text = ''
 local barLength = 12
 local full = "█"
 local empty = " "
@@ -254,6 +252,5 @@ local emptyPart = string.rep(empty, barLength - needToFill)
 
 print(string.format("{\"text\":\"%s\"}", filledPart .. emptyPart))
 '';
-};
 
 }

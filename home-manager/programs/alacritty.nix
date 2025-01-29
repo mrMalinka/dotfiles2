@@ -3,8 +3,10 @@
 let
 	#colors = import ./colors.nix { inherit lib; };
 	#palette = colors.options.globalTheme.colors.default;
-	homeDir = config.home.homeDirectory; # dynamically gets the user home directory
-	walColorsPath = "${homeDir}/.cache/wal/colors-alacritty.toml";
+
+	#homeDir = config.home.homeDirectory; # dynamically gets the user home directory
+	#walColorsPath = "${homeDir}/.cache/wal/colors-alacritty.toml";
+	walColorsPath = "~/.cache/wal/colors-alacritty.toml";
 in {
 	programs.alacritty = {
 		enable = true;

@@ -1,0 +1,45 @@
+{ pkgs, config, ... }:
+
+{
+	xdg.configFile."lf/icons".source = ./icons;
+
+	programs.lf = {
+		enable = true;
+
+		settings = {
+			preview = true;
+			drawbox = true;
+			icons = true;
+			ignorecase = true;
+			hidden = true;
+		};
+
+		commands = {
+			dragon-out = ''%${pkgs.xdragon}/bin/xdragon -a -x "$fx"'';
+			open-editor = ''$$EDITOR $f'';
+
+			mkdir = ''
+''${{
+printf "dir name: "
+read DIR
+mdkir $DIR
+}}
+			''; 
+		};
+
+		keybindings = {
+			i = "open-editor";
+			nd = "mkdir";
+
+			s = "dragon-out";
+			c-o = "lfcd\C-m";
+		};
+
+		extraConfig = ''
+set previewer ctpv
+set cleaner ctpvclear
+&ctpv -s $id
+&ctpvquit $id
+		'';
+	};
+}

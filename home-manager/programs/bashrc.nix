@@ -3,7 +3,7 @@
 # yes i know i should be doing it with shellAliases and whatnot but this is much cleaner
 {
 
-home.file.".bashrc" = { text = ''
+home.file.".bashrc".text = ''
 alias fucking='sudo'
 
 alias resys='sudo nixos-rebuild switch --flake /etc/nixos#default'
@@ -19,9 +19,13 @@ alias unramdisk='sudo umount ~/ramdisk && [ ! -d ~/ramdisk ] || rm -r ~/ramdisk'
 alias wals='~/.config/walpset.sh'
 alias py='python'
 
+lfcd () {
+    # `command` is needed in case `lfcd` is aliased to `lf`
+    cd "$(command lf -print-last-dir "$@")"
+}
+
 eval "$(starship init bash)"
 eval "$(zoxide init bash --cmd cd)"
 '';
-};
 
 }

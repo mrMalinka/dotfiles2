@@ -2,7 +2,7 @@
 
 {
 
-home.file.".config/hypr/hypridle.conf" = { text = ''
+home.file.".config/hypr/hypridle.conf".text = ''
 general {
     #ignore_dbus_inhibit = true
     #ignore_systemd_inhibit = true
@@ -13,6 +13,5 @@ listener {
     on-timeout = hyprlock
 }
 '';
-};
 
 }

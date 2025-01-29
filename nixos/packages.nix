@@ -14,6 +14,7 @@
 		nerd-fonts._0xproto
 	];
 
+	programs.steam.enable = true;
 	environment.systemPackages = with pkgs; [
 		home-manager
 
