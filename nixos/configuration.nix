@@ -3,9 +3,7 @@
 {
 	imports = [
 		./hardware-configuration.nix
-		#inputs.home-manager.nixosModules.default
 		./packages.nix
-		./screenshare.nix
 	];
 
 	boot.loader.systemd-boot.enable = true;
@@ -46,13 +44,6 @@
 	environment.systemPackages = [
 		inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
 	];
-
-	#home-manager = {
-	#  extraSpecialArgs = { inherit inputs; };
-	#  users = {
-	#    "mrmalinka" = import ./home.nix;
-	#  };
-	#};
 
 	system.stateVersion = "24.11";
 }
