@@ -15,14 +15,12 @@ alias snv='sudo nvim'
 
 alias ramdisk='[ ! -d ~/ramdisk ] && mkdir ~/ramdisk && sudo mount -t tmpfs -o size=1G tmpfs ~/ramdisk'
 alias unramdisk='sudo umount ~/ramdisk && [ ! -d ~/ramdisk ] || rm -r ~/ramdisk'
+alias encrypt='gpg --symmetric --cipher-algo AES256 --pinentry-mode loopback --output' # (encrypted name, decrypted name)
+alias decrypt='gpg --decrypt --pinentry-mode loopback --output' # (decrypted name, encrypted name)
+alias pasteimg='wl-paste > img.png'
 
 alias wals='~/.config/walpset.sh'
 alias py='python'
-
-lfcd () {
-    # `command` is needed in case `lfcd` is aliased to `lf`
-    cd "$(command lf -print-last-dir "$@")"
-}
 
 eval "$(starship init bash)"
 eval "$(zoxide init bash --cmd cd)"

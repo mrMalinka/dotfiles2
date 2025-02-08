@@ -123,10 +123,10 @@ in {
 				"$mainMod, V, resizeactive, exact 433 343"
 
 				# move focus with mainMod + arrow keys
-				"$mainMod, left, movefocus, l"
-				"$mainMod, right, movefocus, r"
-				"$mainMod, up, movefocus, u"
-				"$mainMod, down, movefocus, d"
+				"$mainMod, A, movefocus, l"
+				"$mainMod, D, movefocus, r"
+				"$mainMod, W, movefocus, u"
+				"$mainMod, S, movefocus, d"
 
 				# switch workspaces with mainMod + [0-9]
 				"$mainMod, 1, workspace, 1"

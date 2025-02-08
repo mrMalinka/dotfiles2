@@ -4,9 +4,6 @@
 	nixpkgs.config.allowUnfree = true;
 
 	home.packages = with pkgs; [
-		
-	# HERE
-
 		# essential
 		firefox # browser
 		vesktop # discord
@@ -14,11 +11,14 @@
 		neovim # main text editor
 
 		# other
+		go # the best language ever
 		tor-browser # :3
 		heroic # games
 		baobab # disk space visualizer
 		gimp # image editor
+		pinta # simpler image editor
 		vlc # media player
+		gnupg # gpg
 
 		# rice
 		pywal16 # theme generator from wallpaper
@@ -38,6 +38,7 @@
 		feh # image viewer
 		wl-clipboard-rs # clipboard utils (in rust btw)
 		grim # screenshot tool
+		xdragon # file drag out of term
 
 		# fun
 		cava # audio visualizer
@@ -45,11 +46,13 @@
 		cbonsai # bonsai tree
 		pipes-rs # pipe screensaver
 		figlet # big text
+		ollama # ai
 
 		# kinda dependencies
 		jq # json cli (for waybar media player)
 		git # git
 		lua # lua (waybar media player)
+		gcc # for faster nix shell
 		python312 # python
 		imagemagick # pywal backend
 		slurp # screenshot

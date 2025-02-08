@@ -22,6 +22,8 @@ cp $1 ~/.config/wallpaper.png
 read -p "updating home-manager, continue? [y/n] " response && [[ $response == "y" ]] && echo "continuing" || exit 0
 
 home-manager switch --flake ~/.config/home-manager/
+pkill mako
+bash ~/.config/waybar/refresh.sh
 '';
 
 executable = true;
