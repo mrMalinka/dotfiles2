@@ -19,6 +19,10 @@
 		pinta # simpler image editor
 		vlc # media player
 		gnupg # gpg
+		jdk17 # mincraf
+		gradle # also micraft
+		unzip # unzip file
+		jetbrains.idea-community-bin # also micrf
 
 		# rice
 		pywal16 # theme generator from wallpaper

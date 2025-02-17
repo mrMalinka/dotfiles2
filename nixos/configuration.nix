@@ -18,6 +18,16 @@
 	hardware.bluetooth.enable = true;
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+	hardware.graphics = {
+		enable = true;
+		enable32Bit = true;
+	};
+	services.pipewire = {
+		enable = true;
+		alsa.enable = true;
+		pulse.enable = true;
+	};
+
 	# locales
 	time.timeZone = "Europe/Warsaw";
 	i18n.defaultLocale = "en_US.UTF-8";
