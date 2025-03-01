@@ -9,6 +9,7 @@
 		vesktop # discord
 		vscode-fhs # vsc wrapped for nix compat
 		neovim # main text editor
+		prismlauncher # mincraft
 
 		# other
 		go # the best language ever
@@ -39,7 +40,7 @@
 		zoxide # smart cd
 		btop # resource monitor
 		blueman # bluetooth gui
-		feh # image viewer
+		shotwell # image viewer
 		wl-clipboard-rs # clipboard utils (in rust btw)
 		grim # screenshot tool
 		xdragon # file drag out of term
@@ -83,5 +84,6 @@
 		./wofi.nix
 
 		./bashrc.nix # custom
+		./walpset.nix # custom
 	];
 }

@@ -26,7 +26,7 @@ font=0xProto Nerd Font Propo 14
 default-timeout=6000
 
 on-button-left=dismiss
-on-notify=exec mpg123 ~/.config/notif.mp3
+on-notify=exec mpg123 -f 8192 ~/.config/notif.mp3
 
 [urgency=high]
 default-timeout=0

@@ -15,8 +15,13 @@ alias snv='sudo nvim'
 
 alias ramdisk='[ ! -d ~/ramdisk ] && mkdir ~/ramdisk && sudo mount -t tmpfs -o size=1G tmpfs ~/ramdisk'
 alias unramdisk='sudo umount ~/ramdisk && [ ! -d ~/ramdisk ] || rm -r ~/ramdisk'
+
 alias encrypt='gpg --symmetric --cipher-algo AES256 --pinentry-mode loopback --output' # (encrypted name, decrypted name)
 alias decrypt='gpg --decrypt --pinentry-mode loopback --output' # (decrypted name, encrypted name)
+alias usage='echo "decrypt <new name> <file to decrypt>  encrypt <new name> <file to encrypt>"'
+
+alias afk='cbonsai -Sm "afk" -c 󰲓'
+
 alias pasteimg='wl-paste > img.png'
 
 alias wals='~/.config/walpset.sh'

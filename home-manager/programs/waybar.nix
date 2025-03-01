@@ -177,7 +177,7 @@ home.file.".config/waybar/config".text = ''
 	"custom/sleep": {
 		"format": "󰤄",
 		"tooltip": false,
-		"on-click": "systemctl sleep"
+		"on-click": "systemctl sleep && hyprlock"
 	},
 	"custom/shutdown": {
 		"format": "",
