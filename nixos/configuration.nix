@@ -18,6 +18,17 @@
 	hardware.bluetooth.enable = true;
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+/*
+	services.tor = {
+		enable = true;
+		client.enable = true;
+		settings = {
+			SOCKSPort = [9050];
+			ControlPort = 9051;
+		};
+	};
+*/
+
 	hardware.graphics = {
 		enable = true;
 		enable32Bit = true;

@@ -45,4 +45,10 @@
 	home.stateVersion = "24.11";
 	# let home manager manage itself
 	programs.home-manager.enable = true;
+
+	home.sessionVariables = {
+		XDG_DATA_DIRS = "${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}:${pkgs.glib}/share/gsettings-schemas/${pkgs.glib.name}:$XDG_DATA_DIRS";
+		GI_TYPELIB_PATH = "${pkgs.gtk3}/lib/girepository-1.0:${pkgs.webkitgtk}/lib/girepository-1.0:$GI_TYPELIB_PATH";
+		LD_LIBRARY_PATH = "${pkgs.gtk3}/lib:${pkgs.webkitgtk}/lib:$LD_LIBRARY_PATH";
+	};
 }
