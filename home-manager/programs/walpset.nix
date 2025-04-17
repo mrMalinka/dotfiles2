@@ -23,7 +23,8 @@ read -p "updating home-manager, continue? [y/n] " response && [[ $response == "y
 
 home-manager switch --flake ~/.config/home-manager/
 pkill mako
-bash ~/.config/waybar/refresh.sh > /dev/null
+pkill waybar
+waybar > /dev/null & disown
 '';
 
 executable = true;
