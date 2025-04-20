@@ -45,6 +45,7 @@
 		wl-clipboard-rs # clipboard utils (in rust btw)
 		grim # screenshot tool
 		xdragon # file drag out of term
+		ffmpeg # working with videos cli
 
 		# fun
 		cava # audio visualizer
@@ -64,6 +65,7 @@
 		imagemagick # pywal backend
 		slurp # screenshot
 		mpg123 # mp3 player cli (waybar media player)
+		tor # tor binary
 
 		# for wails app:
 		gtk3
