@@ -241,10 +241,12 @@ if not currentTrackPosition then
 end
 
 local needToFill
-if trackLength ~= 0 then
-	needToFill = round((currentTrackPosition / trackLength) * barLength)
-else
-	needToFill = 0
+if trackLength then
+	if trackLength ~= 0 then
+		needToFill = round((currentTrackPosition / trackLength) * barLength)
+	else
+		needToFill = 0
+	end
 end
 
 local filledPart = string.rep(full, needToFill)

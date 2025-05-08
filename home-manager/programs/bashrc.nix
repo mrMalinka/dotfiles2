@@ -25,6 +25,11 @@ alias snv='sudo nvim'
 alias wals='~/.config/walpset.sh'
 alias py='python'
 
+# for go tools
+export PATH="$PATH:$HOME/go/bin"
+# for my own executables
+export PATH="$PATH:$HOME/userbin"
+
 eval "$(starship init bash)"
 eval "$(zoxide init bash --cmd cd)"
 '';

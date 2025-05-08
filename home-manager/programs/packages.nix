@@ -8,11 +8,11 @@
 		firefox # browser
 		vesktop # discord
 		vscode-fhs # vsc wrapped for nix compat
-		neovim # main text editor
+		neovim # text editor
 		prismlauncher # mincraft
 
 		# other
-		go # the best language ever
+		go # peak
 		wails # go app framework
 		tor-browser # :3
 		heroic # games
@@ -20,11 +20,12 @@
 		gimp # image editor
 		pinta # simpler image editor
 		vlc # media player
-		gnupg # gpg
+		gnupg # encryption
 		jdk17 # mincraf
 		gradle # also micraft
 		unzip # unzip file
 		jetbrains.idea-community-bin # also micrf
+		obs-studio # recording
 
 		# rice
 		pywal16 # theme generator from wallpaper
