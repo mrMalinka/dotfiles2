@@ -100,5 +100,6 @@
 
 		./bashrc.nix # custom
 		./walpset.nix # custom
+		#./vesktoptheme.nix # custom
 	];
 }

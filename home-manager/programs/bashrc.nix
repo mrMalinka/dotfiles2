@@ -10,7 +10,7 @@ alias resys='sudo nixos-rebuild switch --flake /etc/nixos#default'
 alias rehome='home-manager switch --flake ~/.config/home-manager/'
 alias cleanup='sudo nix-collect-garbage -d'
 
-alias ramdisk='[ ! -d ~/ramdisk ] && mkdir ~/ramdisk && sudo mount -t tmpfs -o size=1G tmpfs ~/ramdisk'
+alias ramdisk='[ ! -d ~/ramdisk ] && mkdir ~/ramdisk && sudo mount -t tmpfs -o size=16G tmpfs ~/ramdisk'
 alias unramdisk='sudo umount ~/ramdisk && [ ! -d ~/ramdisk ] || rm -r ~/ramdisk'
 
 alias encrypt='gpg --symmetric --cipher-algo AES256 --pinentry-mode loopback --output' # (encrypted name, decrypted name)

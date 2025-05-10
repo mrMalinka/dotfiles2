@@ -113,7 +113,7 @@ in {
 				", Print, exec, grim -g \"$(slurp -d)\" - | wl-copy --type image/png"
 				"$mainMod, R, exec, $terminal"
 				"$mainMod, X, killactive,"
-				"$mainMod, M, exit,"
+				"$mainMod, Y, exit,"
 				"$mainMod, space, exec, $menu"
 				"$mainMod, F, fullscreen"
 
