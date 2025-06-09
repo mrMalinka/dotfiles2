@@ -13,6 +13,7 @@
 
 		# other
 		go # peak
+		godot_4 # game enguh
 		wails # go app framework
 		tor-browser # :3
 		heroic # games
@@ -47,6 +48,8 @@
 		grim # screenshot tool
 		xdragon # file drag out of term
 		ffmpeg # working with videos cli
+		qemu # vm thing brrr
+		wget # download tihng
 
 		# fun
 		cava # audio visualizer
@@ -67,6 +70,7 @@
 		slurp # screenshot
 		mpg123 # mp3 player cli (waybar media player)
 		tor # tor binary
+		bc # calculator for fftrim alias in bashrc
 
 		# for wails app:
 		gtk3
